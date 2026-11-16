@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Videos and large data stay out of git (share via Drive)
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+*.mov
+*.MOV
+*.mp4
+*.MP4
+*.npz
+*.h5
+
+# Training outputs
+checkpoints/
+runs/
+wandb/
+outputs/
+
+# Secrets (VLM API keys)
+.env
+
+# OS
+.DS_Store
